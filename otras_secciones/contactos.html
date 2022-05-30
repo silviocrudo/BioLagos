@@ -25,55 +25,67 @@
                     <li><a href="./contactos.html">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="imgDep">
-                <img src="../img/canotaje_biolagos.png" alt="Imagen_deporte_acuático">
-            </div>   
-            <h1 class="titNav">BioLagos. Paisaje protegido</h1>       
+                 <h1 class="titNav">BioLagos. Paisaje protegido</h1>       
         </header>
-        
+        <br>
         <!--Inicia formulario-->
         <form action="$">
             <h1 class="titulo1">Contactanos</h1>
-            <div class="artPortada">
+            <div class="mensajeForm">
                 <h3>Dejanos tus dudas y consultas y te responderemos a la brevedad</h3>
-            </div>            
-            <label class="categoria" for="Nombre">Nombre:</label>
-            <input type="text" name= id="" required>
-            <br>
-            <label class="categoria" for="Apellido">Apellido:</label>
-            <input type="text" name="" id="" required>
-            <br>
-            <label class="categoria" for="E-mail">E-mail:</label>
-            <input type="email" name="" id="" required>    
-            <br>
-            <br>
-              <label class="categoria" for="texto">Ciudad de residencia:</label>
-                <select name="Ciudad de residencia" id="">
-                    <option value="id0">Elegir una ciudad</option>
-                    <option value="opcion1">General Lagos</option>
-                    <option value="opcion2">Arroyo Seco</option>
-                    <option value="opcion3">Alvear</option>
-                    <option value="opcion4">Rosario</option>
-                    <option value="opcion5">Fighiera</option> 
-                    <option value="opcion6">Otra</option> 
-                </select>
-            <br>
-            <br>
-            <label class="categoria" for="texto">Varón</label>
-            <input type="radio" name="" id="">
-            <label class="categoria" for="texto">Mujer</label>
-            <input type="radio" name="" id="">
-            <label class="categoria" for="texto">No binario</label>
-            <input type="radio" name="" id="">
-            <label class="categoria" for="texto">Prefiere no indicarlo</label>
-            <input type="radio" name="" id="">
-            <br>
-            <p class="categoria">Escriba aquí su mensaje:</p>
-            <textarea name="texto" id="" cols="30" rows="10"></textarea>
-            <br>
-            <button type="submit">Enviar</button>
-            <button disabled="disabled">Deshabilitado</button>
-            <button type="reset">Reinicio</button>
+            </div>  
+            <div class="form">
+                <div class="nombre">
+                    <label class="categoria" for="Nombre">Nombre:</label>
+                    <input type="text" name= id="" required>
+                </div>       
+                <br>
+                <div class="apellido">
+                    <label class="categoria" for="Apellido">Apellido:</label>
+                    <input type="text" name="" id="" required>
+                </div>
+                <br>
+                <div class="mail">
+                    <label class="categoria" for="E-mail">E-mail:</label>
+                    <input type="email" name="" id="" required> 
+                </div>  
+                <br>
+                <br>
+                <div class="ciudad">
+                    <label class="categoria" for="texto">Ciudad de residencia:</label>
+                    <select name="Ciudad de residencia" id="">
+                        <option value="id0">Elegir una ciudad</option>
+                        <option value="opcion1">General Lagos</option>
+                        <option value="opcion2">Arroyo Seco</option>
+                        <option value="opcion3">Alvear</option>
+                        <option value="opcion4">Rosario</option>
+                        <option value="opcion5">Fighiera</option> 
+                        <option value="opcion6">Otra</option> 
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div class="genero">
+                    <label class="categoria" for="texto">Varón</label>
+                    <input type="radio" name="" id="">
+                    <label class="categoria" for="texto">Mujer</label>
+                    <input type="radio" name="" id="">
+                    <label class="categoria" for="texto">No binario</label>
+                    <input type="radio" name="" id="">
+                    <label class="categoria" for="texto">Prefiere no indicarlo</label>
+                    <input type="radio" name="" id="">
+                </div>
+                
+                <br>
+                <p class="categoria">Escriba aquí su mensaje:</p>
+                <textarea name="texto" id="" cols="30" rows="10"></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+                <button disabled="disabled">Deshabilitado</button>
+                <button type="reset">Reinicio</button>
+
+            </div>
+            
         </form><!--Termina el formulario-->
         
       <!--Empieza el footer-->
