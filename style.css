@@ -1,0 +1,603 @@
+/*fuente de la página*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+
+/*reseteo del css*/
+* {
+margin: 0;
+padding: 0;}
+
+body{
+    font-size: 20px;
+}
+
+/* Empieza el formato del header para cada página*/
+
+/* Header inicio*/
+
+.headerIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 400px 50px;
+    grid-template-areas: 
+    "logoBiolagos    nav      nav"
+    "imgIsla      imgIsla   imgIsla"
+    "h1               h1       h1";
+}
+
+.imgIsla img{
+    width: 100%;
+    height: 400px;
+}
+
+/* Header agenda*/
+
+.headerAgenda{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 400px 50px;
+    grid-template-areas: 
+    "logoBiolagos    nav      nav"
+    "imgDep         imgDep   imgDep"
+    "h1               h1       h1";
+}
+.imgDep img{
+    width: 115%;
+    height: 400px;
+}
+
+/* Header conocenos*/
+
+.headerConocenos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 400px 50px;
+    grid-template-areas: 
+    "logoBiolagos    nav      nav"
+    "imgDep         imgDep   imgDep"
+    "h1               h1       h1";
+}
+.imgDep img{
+    width: 115%;
+    height: 400px;
+}
+
+/* Header contactos*/
+
+.headerContactos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 400px 50px;
+    grid-template-areas: 
+    "logoBiolagos    nav      nav"
+    "imgDep         imgDep   imgDep"
+    "h1               h1       h1";
+}
+.imgDep img{
+    width: 115%;
+    height: 400px;
+}
+
+
+/* Header Flora y Fauna*/
+.headerFlora{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 400px 50px;
+    grid-template-areas: 
+    "logoBiolagos    nav      nav"
+    "imgFyF         imgFyF   imgFyF"
+    "h1               h1       h1";
+}
+.imgFlora img{
+    width: 300%;
+    height: 400px;
+}
+
+
+/*logo Biolagos (igual para todos los header)*/
+.logoBiolagos img{
+    width: 150px;
+    height: 100px;
+}
+
+
+
+/* Declaración de las áreas de la grilla INICIO*/
+.logoBiolagos{
+    grid-area: logoBiolagos;
+    background-color: #f2edd7;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: #f2edd7;
+}
+
+.imgIsla{
+    grid-area: imgIsla;
+}
+
+.imgDep{
+    grid-area: imgDep;
+}
+.titNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    grid-area: h1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Formato de nav bar*/
+.navBar {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+font-weight: bold;
+font-size: 20px;
+}
+
+ul li{
+list-style-type: none;
+padding: 8px;
+font-weight: bold;
+}
+    
+ul li a{
+line-height: 100px;
+text-decoration: none;
+width: max-content;
+color: #08b43c;
+}
+
+ul li a:hover{
+    background-color: rgb(207, 154, 136);
+    padding: 5px;
+}
+
+h1{
+background-color: #f2edd7;
+color: #08b43c;
+font-size: 30px;
+}
+
+/* Empieza el formato de las seccion de INDEX*/
+
+.sectionIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-column-gap: 15px;
+}
+
+.sectionIndex{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+h2{
+    color: #08b43c;
+    font-size: 25px;
+}
+
+/* Empieza el formato de las seccion de AGENDA*/
+.sectionAgenda{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 400px;
+    grid-column-gap: 15px;
+    grid-template-areas: 
+    ".                titAgenda0           ."
+    "articleAgenda1  articleAgenda2  articleAgenda3"    
+}
+
+.sectionAgenda{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/* Declaración de las áreas de la grilla AGENDA*/
+.titAgenda0{
+    grid-area: titAgenda0;
+} 
+.articleAgenda1{
+    grid-area: articleAgenda1;
+}
+
+.articleAgenda2{
+    grid-area: articleAgenda2;
+}
+.articleAgenda3{
+    grid-area: articleAgenda3;
+}
+
+.imgSenderismo{
+    width: 300px;
+    height: 200px;
+}
+
+.imgVoley{
+    width: 300px;
+    height: 200px;
+}
+
+.imgCanotaje{
+    width: 300px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+/* Empieza el formato de las seccion de FLORA Y FAUNA*/
+.sectionFlora{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 400px;
+    grid-column-gap: 15px;
+    grid-template-areas: 
+    " titFlora0       titFlora0"
+    "articleFLora1  articleFlora2"    
+}
+
+.sectionFlora{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/* Declaración de las áreas de la grilla FLORA Y FAUNA*/
+.titFlora0{
+    grid-area: titFlora0;
+} 
+.articleFlora1{
+    grid-area: articleFlora1;
+}
+
+.articleFlora2{
+    grid-area: articleFlora2;
+}
+
+.imgFlora1{
+    width: 300px;
+    height: 200px;
+}
+
+.imgFlora2{
+    width: 300px;
+    height: 200px;
+}
+
+
+/*Empieza el formato de la seccion CONOCENOS*/
+.sectionConocenos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-column-gap: 15px;
+}
+
+.sectionConocenos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+h2{
+    color: #08b43c;
+    font-size: 25px;
+}
+
+
+
+/* Empieza el formato de del footer*/
+
+.footer{
+    display: grid;
+    grid-template-columns: 300px 300px auto;
+    grid-template-rows: 200px;
+    grid-template-areas: 
+    "logoBioLagos2 logoComuna contenedorPie";
+    background-color: #f2edd7;
+}
+
+.logoBiolagos2{
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.logoBiolagos2 img{
+    width: 250px;
+    height: 150px;
+}
+
+.logoComuna{
+    margin-top: 20px;
+}
+.logoComuna img{
+    width: 150px;
+    height: 150px;
+}
+
+.contenedorPie{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;  
+    margin-right: 30px;
+}
+
+.contenedorPie p{
+    color: #08b43c;
+    font-weight: bold;
+}
+
+
+/* Acá empieza el estilo para pantalla de celular - igual o menor a 480px*/
+
+@media (max-width:480px) {
+    /*reseteo del css*/
+* {
+    margin: 0;
+    padding: 0;}
+    
+    body{
+        font-size: 15px;
+    }
+    
+    /* Empieza el formato del header para cada página*/
+    
+    /* Sección inicio*/
+    
+    .headerIndex{
+        display: grid;
+        grid-template-columns: 150px auto;
+        grid-template-rows: 100px 200px 50px;
+        grid-template-areas: 
+        "logoBiolagos  nav"
+        "imgIsla      imgIsla"
+        "h1             h1";
+    }
+    
+    .imgIsla img{
+        width: 100%;
+        height: 200px;
+    }
+    
+    /* Sección agenda*/
+    
+    .headerAgenda{
+        display: grid;
+        grid-template-columns: 150px auto;
+        grid-template-rows: 100px 200px 50px;
+        grid-template-areas: 
+        "logoBiolagos     nav"
+        "imgDep           imgDep"
+        "h1               h1";
+    }
+    .imgDep img{
+        width: 115%;
+        height: 200px;
+    }
+    
+    /*logo Biolagos (igual para todos los header)*/
+    .logoBiolagos img{
+        width: 150px;
+        height: 100px;
+    }
+    
+    
+    
+    /* Declaración de las áreas de la grilla INICIO*/
+    .logoBiolagos{
+        grid-area: logoBiolagos;
+        background-color: #f2edd7;
+    }
+    
+    .nav{
+        grid-area: nav;
+        background-color: #f2edd7;
+    }
+    
+    .imgIsla{
+        grid-area: imgIsla;
+    }
+    
+    .imgDep{
+        grid-area: imgDep;
+    }
+    
+    h1{
+        grid-area: h1;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    /* Formato de nav bar*/
+    .navBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    font-weight: bold;
+    font-size: 10px;
+    }
+    
+    ul li{
+    list-style-type: none;
+    /*padding: 8px;*/
+    font-weight: bold;
+    }
+        
+    ul li a{
+    line-height: 100px;
+    text-decoration: none;
+    width: max-content;
+    color: #08b43c;
+    }
+    
+    ul li a:hover{
+        background-color: rgb(207, 154, 136);
+        padding: 5px;
+    }
+    
+    h1{
+    background-color: #f2edd7;
+    color: #08b43c;
+    font-size: 25px;
+    }
+
+    .titNav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Empieza el formato de las seccion de INDEX*/
+    
+    .sectionIndex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px;
+        grid-template-areas: 
+        "article1"
+        "article2"
+        "article3";
+        grid-row-gap: 10px;
+        
+    }
+   
+    /* Declaración de las áreas de la grilla de section index*/
+    .article1{
+        grid-area: article1;
+    }
+   
+    .article2{
+        grid-area: article2;
+    }
+
+    .article3{
+        grid-area: article3;
+    }
+   
+    
+    .sectionIndex{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
+    h2{
+        color: #08b43c;
+        font-size: 20px;
+    }
+    
+    /* Empieza el formato de las seccion de AGENDA*/
+    .sectionAgenda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 200px 200px 200px;
+        grid-template-areas: 
+        "titAgenda0"
+        "articleAgenda1"
+        "articleAgenda2"
+        "articleAgenda3"
+
+    }
+    
+    .sectionAgenda{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    /* Declaración de las áreas de la grilla AGENDA*/
+    
+    .titAgenda0{
+        grid-area: titAgenda0;
+    } 
+    .articleAgenda1{
+        grid-area: articleAgenda1;
+    }
+
+    .articleAgenda2{
+        grid-area: articleAgenda2;
+    }
+    .articleAgenda3{
+        grid-area: articleAgenda3;
+    }
+
+    .imgSenderismo{
+        width: 200px;
+        height: 100px;
+    }
+    
+    .imgVoley{
+        width: 200px;
+        height: 100px;
+    }
+    
+    .imgCanotaje{
+        width: 200px;
+        height: 100px;
+    }
+    
+    
+    /* Empieza el formato del footer*/
+    
+    .footer{
+        display: grid;
+        grid-template-columns: 200px  auto;
+        grid-template-rows: 150px;
+        grid-template-areas: 
+        "logoBioLagos2 logoComuna contenedorPie";
+        background-color: #f2edd7;
+    }
+    
+    .logoBiolagos2{
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+    
+    .logoBiolagos2 img{
+        width: 150px;
+        height: 100px;
+    }
+    
+    .logoComuna{
+        margin-top: 20px;
+        display: none;
+    }
+    .logoComuna img{
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+    
+    .contenedorPie{
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end;  
+        margin-right: 10px;
+    }
+    
+    .contenedorPie p{
+        color: #08b43c;
+        font-weight: bold;
+    }
+   
+}
